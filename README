@@ -1,0 +1,40 @@
+4. Acesse o servidor localmente através do navegador no endereço `http://localhost:3000`.
+
+5. Faça upload de arquivos e teste o sistema de proteção com senha.
+
+6. Para alterar a configuração de uploads, edite as variáveis no código (exemplo: tamanho máximo de arquivo, horas de expiração, número máximo de downloads).
+
+## Como Funciona
+
+O código permite que o usuário faça upload de arquivos com verificação de vírus. Após o upload, o arquivo é criptografado com AES-256 usando uma senha fornecida pelo usuário. O arquivo criptografado é armazenado e um URL seguro é gerado para acesso posterior.
+
+Ao tentar fazer o download, o usuário precisa fornecer a senha correta. O número de tentativas erradas é limitado, e se exceder o limite, o arquivo é excluído. Além disso, o arquivo expira após um período de tempo configurável.
+
+## Testes
+
+O código foi testado nos seguintes navegadores:
+
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+
+Para garantir a compatibilidade com outros navegadores, recomenda-se realizar testes adicionais.
+
+## Contribuições
+
+Contribuições são bem-vindas! Para contribuir:
+
+1. Faça um fork deste repositório.
+2. Crie uma branch para sua feature (`git checkout -b minha-feature`).
+3. Realize suas alterações e faça commits.
+4. Envie um pull request para a branch principal.
+
+Certifique-se de que seu código esteja bem documentado e siga as convenções de estilo do projeto.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo LICENSE para mais detalhes.
+
+---
+
+Este código foi gerado com a assistência do ChatGPT, uma ferramenta de inteligência artificial desenvolvida pela OpenAI. O código foi personalizado para atender às necessidades de upload seguro, criptografia de arquivos e proteção por senha.
